@@ -22,8 +22,10 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 - The test directory contains test TeX files that stress various complexities that the parser must handle.
 - Please ensure you run any bug fixes against those files (e.g., test vectors) and validate your changes.
 
-
 ## Credits
--**CircuiTikZ-Convert**: [CircuiTikZ-convert] (https://github.com/pierpaolopalazzo/CircuiTikZ-convert)
+- **CircuiTikZ-Convert**: [CircuiTikZ-convert](https://github.com/pierpaolopalazzo/CircuiTikZ-convert) a PHP starting point for this effort.
 - **CircuiTikZ Designer**: [CircuiTikZ Designer](https://circuit2tikz.tf.fau.de/designer/) was used for LaTeX circuit design.
-- **CircuiTikZ**: The [CircuiTikZ](https://www.ctan.org/pkg/circuitikz) LaTeX package was essential for circuit creation. 
+- **CircuiTikZ**: The [CircuiTikZ](https://www.ctan.org/pkg/circuitikz) LaTeX package was essential for circuit creation.
+
+## License
+This project is distributed under the MIT License.
