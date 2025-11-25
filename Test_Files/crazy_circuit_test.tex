@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+    \node[shape=rectangle, fill={rgb,255:red,0;green,0;blue,0}, fill opacity=0.11, draw={rgb,255:red,0;green,0;blue,0}, line width=1pt, minimum width=1.762cm, minimum height=1.215cm](my text) at (12.648, 11){} node[anchor=south] at ([yshift=0.63cm]my text.text){$A_{label}$} node[anchor=center, align=center, text width=1.444cm, inner sep=5pt] at (12.648, 11){\textcolor{rgb,255:red,255;green,0;blue,128}{\small $\,\boldsymbol{+}$\\  $e_c(t)$  $\frac{a}{b} $ \\ $\ \boldsymbol{-}$}};
+    % \node[shape=rectangle, minimum width=2.058cm, minimum height=1.34cm] at (12.25, 11.062){} node[anchor=north, align=center, text width=1.741cm, inner sep=5pt] at (12.25, 11.75){\small $\,\boldsymbol{+}$\\ $e_c(t)$  $\frac{a}{b} $\\ $\ \boldsymbol{-}$};
+    
+	\node[ground] at (7, 9.75){};
+	\draw (7, 11.5) to[american voltage source, invert, l_={$e(t)$}] (7, 10.5);
+	\draw[line width=0.6pt] (7, 9.75) -- (7, 10.5);
+    \draw (7.5, 12.5) to[american resistor, invert, l={$R_s  \frac{a}{b} [a_b] \left[\frac{a}{b}\right] $}] (8.75, 12.5);
+	\draw (9.54, 10.75) to[cute inductor, l_={$L_1$}] (9.54, 9.75);
+	\draw (11.29, 10.75) to[capacitor, l={$C_1$}] (11.29, 11.25);
+	\draw (12, 12.5) to[american resistor, l={$R_2$}] (13.25, 12.5);
+	\draw (13.79, 11.5) to[cute inductor, l={$L_2 $}] (13.79, 10.5);
+	\draw[line width=0.6pt] (7, 11.5) -| (7, 12.5) -- (7.5, 12.5);
+	\draw[line width=0.6pt] (8.79, 12.5) -- (12, 12.5);
+	\draw (9.54, 12.25) -| (9.54, 12.5) -- (8.75, 12.5);
+	\draw[line width=0.6pt] (9.54, 11) -| (9.54, 10.75);
+	\node[ground] at (9.54, 9.75){};
+	\draw[line width=0.6pt, stealth-latex] (11.29, 11.25) |- (12, 12.5);
+	\draw[line width=0.6pt] (13.25, 12.5) -| (13.79, 11.5);
+	\node[ground](xyz) at (11.29, 9.75){};
+	\node[ground] at (13.79, 9.75){};
+	\draw[line width=0.6pt] (11.29, 10.75) -- (11.29, 9.75);
+	\draw[line width=0.6pt] (13.79, 10.5) -| (13.79, 9.75);
+	\draw (9.54, 12.25) to[american resistor, mirror, invert, l_={$R_1 $}] (9.54, 11);
+
+    
+	\draw (4.25, 12.25) to[opening switch, mirror, invert, l={$\scriptstyle t=0$}] (4.75, 12.25);
+	\draw (4.745, 12.25) -- (7, 12.25);
+	\draw (4.5, 10.25) |- (4, 11.75) -| (4, 12.25) -- (4.255, 12.25);
+	\node[american and port, xscale=0.5, yscale=0.5] at (11.386, 13.53){};
+	\node[shape=rectangle, minimum width=1.308cm, minimum height=0.59cm](x1) at (6.672, 13){} node[anchor=north, align=center, text width=0.991cm, inner sep=5pt] at (6.672, 13.312){\Large A $e_t$};
+    % \node[shape=rectangle, minimum width=1.308cm, minimum height=0.59cm] at (6.672, 12.813){} node[anchor=north, align=center, text width=0.991cm, inner sep=5pt] at (6.672, 13.125){\small A $e_t$};
+    % \node[shape=rectangle, minimum width=1.308cm, minimum height=0.59cm] at (6.672, 12.813){} node[anchor=north, align=center, text width=0.991cm, inner sep=5pt] at (6.672, 13.125){\Large A $e_t$};
+
+	\node[circ] at (7, 12.5){};
+	\draw[stealth-to] (10, 6) -- (12, 6) -- (12.25, 6);
+	\draw[to reversed-|] (2, 6) -- (3, 6) -| (3, 8) -- (4.5, 8) -| (4.5, 7) -- (6.75, 7) |- (7, 9.75);
+	\node[shape=rectangle, fill={rgb,255:red,255;green,255;blue,128}, fill opacity=0.56, draw={rgb,255:red,128;green,64;blue,0}, draw opacity=0.58, line width=1.5pt, dash pattern={on 6pt off 6pt on 1.5pt off 6pt on 1.5pt off 6pt}, minimum width=2.197cm, minimum height=1.181cm](N1) at (14.375, 8.25){} node[anchor=south] at ([yshift=0.04cm]N1.north east){$U_1$} node[anchor=north west, align=left, text width=2.144cm, inner sep=2] at (13.25, 8.867){\small This is mixed $e_t$ text $\beta\cdot f(\alpha)$};
+	\path[draw={rgb,255:red,0;green,128;blue,64}, draw opacity=0.74, line width=0.9pt, dash pattern={on 0.9pt off 1.8pt}, stealth-] (9.921, 7.819) -| (8.039, 7.681) |- (7.523, 6.134) |- (4.946, 6.392) |- (4.688, 7.681) |- (3.915, 8.969) |- (4.173, 10) -| (6.75, 10.258) -- (7.008, 10.258);
+	\node[npn, bodydiode, nobase, photo, schottky base, tr circle, rotate=-45, xscale=1.1, yscale=-1.1](N2) at (11.61, 7.697){} node[anchor=north west] at (N2.text){$Q_1$};
+    
+    \node[shape=rectangle, minimum width=2.465cm, minimum height=1.465cm] at (13, 14.25){} node[anchor=north west, align=left, text width=2.077cm, inner sep=6pt] at (11.75, 15){Plain Text Box};
+    
+    % \node[npn, bodydiode, nobase, photo, schottky base, tr circle, rotate=-45, yscale=-1](N1) at (10.75, 7.98){} node[anchor=north west] at (N1.text){$Q_1$};
+    % \node[npn, bodydiode, nobase, photo, schottky base, tr circle, rotate=-45, xscale=1.1, yscale=-1.1](N1) at (10.75, 7.98){} node[anchor=north west] at (N1.text){$Q_1$};
+    % \node[npn, bodydiode, nobase, photo, schottky base, tr circle, xscale=-1](N1) at (10.75, 7.98){} node[anchor=east] at (N1.text){$Q_1$};
+    % \node[npn, bodydiode, nobase, photo, schottky base, tr circle, rotate=-45, yscale=-1](N1) at (10.75, 7.98){} node[anchor=east] at (N1.text){$Q_1$};
+    % \node[npn, bodydiode, nobase, photo, schottky base, tr circle, xscale=0.62, yscale=0.62](N1) at (10.75, 7.98){} node[anchor=west] at (N1.text){$Q_1$};
+\end{tikzpicture}
