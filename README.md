@@ -19,7 +19,7 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 - Packages:  json, glob, re, os
 
 ## Test Files
-- The test directory contains test TeX files that stress various complexities that the parser must handle.
+- The [Test Files](Test_Files) directory contains test TeX files that stress various complexities the parser must handle.
 - Please ensure you run any bug fixes against those files (e.g., test vectors) and validate your changes.
 
 ## Credits
