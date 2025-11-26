@@ -7,7 +7,12 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 - Convert files of the form  *.tex into a JSON.
 - Output file *.json  (same name as the .tex input file)
 - Supports complex /node /draw structures with mixed text and LaTeX math
-- Supports multi-segment wires, block diagrams, ... (See Examples Below)
+- Supports multi-segment wires, block diagrams, ... (See Example Below)
+
+ 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/urogers/CircuiTikZ_Designer_to_JSON/master/crazy_circuit_test.png" width=50% height=50% alt="Test Circuit Example"/ >
+</p>
 
 ## Caveat   
 - This was not designed to support generic TikZ or CircuiTikZ files.  Those will most likely not work because they are not really supported by CircuiTikZ Designer.  For example, none of the output-*.json files at [CircuiTikZ-convert](https://github.com/pierpaolopalazzo/CircuiTikZ-convert) are currently recognized by CircuitTikZ Designer.
