@@ -1,0 +1,340 @@
+{
+  "version": "0.1",
+  "components": [
+    {
+      "type": "rect",
+      "position": {
+        "x": 212.598,
+        "y": -330.709
+      },
+      "size": {
+        "x": 47.244,
+        "y": 37.523
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "text": "$G_c$"
+      },
+      "name": null,
+      "stroke": {
+        "width": "1pt"
+      },
+      "fill": {}
+    },
+    {
+      "type": "rect",
+      "position": {
+        "x": 307.087,
+        "y": -330.709
+      },
+      "size": {
+        "x": 47.244,
+        "y": 37.523
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "text": "$G_p$"
+      },
+      "name": null,
+      "stroke": {
+        "width": "1pt"
+      },
+      "fill": {}
+    },
+    {
+      "type": "ellipse",
+      "position": {
+        "x": 132.284,
+        "y": -330.709
+      },
+      "size": {
+        "x": 0,
+        "y": 0
+      },
+      "stroke": {
+        "width": "1pt"
+      }
+    },
+    {
+      "type": "ellipse",
+      "position": {
+        "x": 259.843,
+        "y": -330.709
+      },
+      "size": {
+        "x": 8.904,
+        "y": 8.904
+      },
+      "stroke": {
+        "width": "0.6pt"
+      }
+    },
+    {
+      "type": "ellipse",
+      "position": {
+        "x": 165.354,
+        "y": -330.709
+      },
+      "size": {
+        "x": 8.904,
+        "y": 8.904
+      },
+      "stroke": {
+        "width": "0.6pt"
+      }
+    },
+    {
+      "type": "rect",
+      "position": {
+        "x": 127.559,
+        "y": -330.709
+      },
+      "size": {
+        "x": 27.802,
+        "y": 18.081
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "fontSize": "small",
+        "text": " $r(t)$"
+      },
+      "name": null,
+      "stroke": {
+        "opacity": 0
+      },
+      "fill": {}
+    },
+    {
+      "type": "rect",
+      "position": {
+        "x": 392.126,
+        "y": -330.709
+      },
+      "size": {
+        "x": 27.802,
+        "y": 18.081
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "fontSize": "small",
+        "text": " $c(t)$"
+      },
+      "name": null,
+      "stroke": {
+        "opacity": 0
+      },
+      "fill": {}
+    },
+    {
+      "type": "rect",
+      "position": {
+        "x": 172.46,
+        "y": -321.26
+      },
+      "size": {
+        "x": 22.941,
+        "y": 8.36
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "fontSize": "tiny",
+        "text": " $-$"
+      },
+      "name": null,
+      "stroke": {
+        "opacity": 0
+      },
+      "fill": {}
+    },
+    {
+      "type": "rect",
+      "position": {
+        "x": 259.843,
+        "y": -368.504
+      },
+      "size": {
+        "x": 27.802,
+        "y": 18.081
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "fontSize": "small",
+        "text": " $d(t)$"
+      },
+      "name": null,
+      "stroke": {
+        "opacity": 0
+      },
+      "fill": {}
+    },
+    {
+      "type": "rect",
+      "position": {
+        "x": 253.455,
+        "y": -341.594
+      },
+      "size": {
+        "x": 22.941,
+        "y": 8.36
+      },
+      "text": {
+        "align": "1",
+        "justify": "0",
+        "innerSep": "0",
+        "showPlaceholderText": "true",
+        "fontSize": "tiny",
+        "text": " $-$"
+      },
+      "name": null,
+      "stroke": {
+        "opacity": 0
+      },
+      "fill": {}
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 170.079,
+          "y": -330.709
+        },
+        {
+          "x": 188.976,
+          "y": -330.709
+        }
+      ],
+      "directions": [
+        "--"
+      ],
+      "endArrow": "latex"
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 236.221,
+          "y": -330.709
+        },
+        {
+          "x": 255.118,
+          "y": -330.709
+        }
+      ],
+      "directions": [
+        "--"
+      ],
+      "endArrow": "stealth"
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 264.567,
+          "y": -330.709
+        },
+        {
+          "x": 283.465,
+          "y": -330.709
+        }
+      ],
+      "directions": [
+        "--"
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 330.709,
+          "y": -330.709
+        },
+        {
+          "x": 363.78,
+          "y": -288.189
+        },
+        {
+          "x": 165.354,
+          "y": -288.189
+        },
+        {
+          "x": 165.354,
+          "y": -325.984
+        }
+      ],
+      "directions": [
+        "-|",
+        "|-",
+        "-|"
+      ],
+      "endArrow": "stealth"
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 141.732,
+          "y": -330.709
+        },
+        {
+          "x": 160.63,
+          "y": -330.709
+        }
+      ],
+      "directions": [
+        "--"
+      ],
+      "endArrow": "latex"
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 363.78,
+          "y": -330.709
+        },
+        {
+          "x": 377.953,
+          "y": -330.709
+        }
+      ],
+      "directions": [
+        "--"
+      ]
+    },
+    {
+      "type": "wire",
+      "points": [
+        {
+          "x": 259.843,
+          "y": -359.055
+        },
+        {
+          "x": 259.843,
+          "y": -335.433
+        }
+      ],
+      "directions": [
+        "--"
+      ],
+      "endArrow": "stealth"
+    }
+  ]
+}
