@@ -16,8 +16,8 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 
 ## Caveat   
 - This was not designed to support generic TikZ or CircuiTikZ files.  Those will most likely not work because they are not really supported by CircuiTikZ Designer.  For example, none of the output-*.json files at [CircuiTikZ-convert](https://github.com/pierpaolopalazzo/CircuiTikZ-convert) are currently recognized by CircuitTikZ Designer.
-- The software started as a fast-and-dirty way to processing my TikZ codes to JSON, and evolved from there to support complexity.  As such, a refactoring would improve the current release.
-- Regular Expression (re) is used throughout.  With re comes "brittle" implementations, but attempts have been made to reduce undesireable behavior. Most of the re patterns were developed using AI and much debugging.
+- The software project was started as a fast-and-dirty way to process my TikZ codes to JSON.  It then evolved from there to support complexity and early architectural choices were not optimal in hindsight.  As such, a refactoring would improve this project, even though it works well currently.
+- Regular Expression (re) is used throughout.  With re comes "brittle" implementations, but attempts have been made to reduce undesireable behavior. Most of the re patterns were developed with the support of AI and a significant amount of debugging.
 
 ## Requirements
 - Python 3.xx
