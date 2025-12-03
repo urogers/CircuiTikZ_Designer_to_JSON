@@ -1,7 +1,7 @@
 # CircuiTikZ Designer to JSON
-Converts TikZ code developed with CircuiTikZ Designer to JSON for importing back into [CircuiTikZ](https://www.circuit2tikz.tf.fau.de/designer/)
+Converts TikZ code developed with CircuiTikZ Designer to JSON for importing back into [CircuiTikZ Designer](https://www.circuit2tikz.tf.fau.de/designer/)
 
-The initial version of this software was an AI port of the PHP code by pierpaolopalazzo in [CircuiTikZ-convert](https://github.com/pierpaolopalazzo/CircuiTikZ-convert) to Python (only because I did not know PHP and it did not support all the features I needed).  
+The initial version of this software was an AI port of the PHP code by pierpaolopalazzo in [CircuiTikZ-convert](https://github.com/pierpaolopalazzo/CircuiTikZ-convert) to Python. That port was then modified to support CircuiTikZ Designer at the expense of general CircuiTikZ codes.  
 
 ## Functionality
 - Convert files of the form  *.tex into a JSON.
@@ -23,8 +23,30 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 - Python 3.xx
 - Packages:  json, glob, re, os
 
+## Project Structure
+- `convert.py` — Main conversion code focused on File I/O.
+- `gen_tikz_tokens.py` — Parse a .tex file and create a list of tokens for each TikZ line.
+- `tikz_tokens_2_json` — Parse the tokens for each line and create a correspoing JSON dictionary
+
+## Usage
+
+1. **Prepare input files**  
+   Place the LaTeX files with a \begin{tikzpicture} or \begin{circuitikz} with a pattern `*.tex`.
+
+2. **Run the conversion**  
+   - Run the Python code directly (Navigate to the directory containing your *.tex files and the three .py files for this project)
+     ```
+     python convert.py
+     ```
+      _or_  
+     Use your favorite Python development environment
+ 
+ 3. **Change which files are parsed**
+    - Use any .py editor to edit `convert.py` file and modify the variable: input_files
+    - There are many examples given via commented code near `def main():`
+
 ## Test Files
-- The [Test Files](Test_Files) directory contains test TeX files that stress various complexities the parser must handle.
+- The [Test Files](Test_Files) directory contains test TeX files that stress various complexities the parser must handle relative to what CircuiTikZ Designer can produce.
 - Please ensure you run any bug fixes against those files (e.g., test vectors) and validate your changes.
 
 ## Credits
