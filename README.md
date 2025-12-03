@@ -7,7 +7,7 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 - Convert files of the form  *.tex into a JSON.
 - Output file *.json  (same name as the .tex input file)
 - Supports complex /node /draw structures with mixed text and LaTeX math
-- Supports multi-segment wires, block diagrams, ... (See Example Below)
+- Supports multi-segment wires, block diagrams, ... (See Screenshot Below)
 
  
 <p align="center">
