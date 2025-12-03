@@ -51,7 +51,7 @@ The initial version of this software was an AI port of the PHP code by pierpaolo
 
 ## Credits
 - **CircuiTikZ-Convert**: [CircuiTikZ-convert](https://github.com/pierpaolopalazzo/CircuiTikZ-convert) a PHP starting point for this effort.
-- **CircuiTikZ Designer**: [CircuiTikZ Designer](https://circuit2tikz.tf.fau.de/designer/) was used for LaTeX circuit design.
+- **CircuiTikZ Designer**: [CircuiTikZ Designer](https://circuit2tikz.tf.fau.de/designer/) output was used to reverse engineer the TikZ to JSON parser. The GitHub repository is here [GitHub: CircuiTikZ-Designer](https://github.com/Circuit2TikZ/CircuiTikZ-Designer).
 - **CircuiTikZ**: The [CircuiTikZ](https://www.ctan.org/pkg/circuitikz) LaTeX package was essential for circuit creation.
 
 ## License
